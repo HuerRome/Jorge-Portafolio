@@ -1,0 +1,221 @@
+
+.skills{
+    width: 100vw;
+    display: flex;
+    margin-top: 2vh;
+}
+
+.skills .projects{
+    width: 50%;
+}
+
+.skills .technologies{
+    width: 50%;
+    margin-bottom: 4vh;
+}
+
+.technologies > div{
+    gap: 4vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4vw 0 2vw;
+    margin-top: 10vh;
+    justify-content: center;
+}
+
+.technologies div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5vh;
+}
+.technologies div div img{
+    width: 130px;
+    width: 8vw;
+    width: 7vw;
+}
+.technologies div div span{
+    font-size: 18px;
+    
+}
+
+.skills .projects{
+    padding: 4vh 4% 4vh 6%;
+}
+
+.skills .projects h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 1.2s ease-out;
+    font-size: 80px;
+    font-weight: 800;
+    color: #52dee5;
+    line-height: 80px;
+    margin: 2vh 0;
+    opacity: 0;
+    transition: all 1s ease-out;
+    transform: translate(-20vh, 0vh);
+    background-image: linear-gradient(to right,#8e6de7,#d56de7,#5dbeff,#d56de7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fluido 10s ease-in-out infinite;
+    background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+
+.skills .projects h1.visible{
+    opacity: 1;
+    transform: translate(0vh, 0vh);
+}
+
+.skills .projects > div{
+    gap: 3vh;
+    display: flex;
+    padding: 0 1vw;
+    flex-direction: column;
+}
+
+.skills .projects > span{
+    width: 100%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'La Belle Aurore','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.skills .projects p{
+    font-size: 16px;
+}
+
+.skills .projects h2{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.skills .projects a{
+    color: #08fdd8;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px){
+    .skills{
+        flex-direction: column;
+    }
+    .skills .projects{
+        width: 100%;
+        padding: 0vh 4% 4vh 6%;
+    }
+    .skills .projects h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: all 1.2s ease-out;
+        font-size: 63px;
+        font-size: 43px;
+        font-weight: 800;
+        color: #d56de7;
+        line-height: 43px;
+        margin: 0vh 0 4vh 0;
+        font-style: normal;
+        background-image: linear-gradient(to right,#8e6de7,#d56de7,#5dbeff,#d56de7);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: fluido 10s ease-in-out infinite;
+        background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .skills .projects > div{
+        gap: 3vh;
+        display: flex;
+        padding: 0 1vw;
+        flex-direction: column;
+    }
+    .skills .projects > span{
+        width: 100%;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.2);
+        font-family: 'La Belle Aurore','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .skills .projects p{
+        font-size: 16px;
+    }
+    .skills .projects h2{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    .skills .projects a{
+        color: #08fdd8;
+    }
+    .skills .technologies{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .technologies h1{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 4vh 0 6vh 5vw;
+    }
+    .technologies > div{
+        gap: 10vw;
+        display: flex;
+        margin-top: 0;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        padding: 0 0vw 0 0vw;
+        justify-content: flex-start;
+        -webkit-overflow-scrolling: touch;   
+    }
+    .technologies div div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5vh;
+    }
+    .technologies div div img{
+        width: 130px;
+        width: 25vw;
+    }
+    .technologies div div span{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 8vh;
+    }
+    .technologies > div::-webkit-scrollbar {
+        width: 6px;
+    }
+    .technologies > div::-webkit-scrollbar:horizontal {
+        height: 6px;
+    }
+    .technologies > div::-webkit-scrollbar-track {
+        background-color: transparentize(#ccc, 0.7);
+        background: #1f2864;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        margin: 0 8vw;
+    }
+    .technologies > div::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: transparentize(#ccc, 0.5);
+        background: #55cde8;
+    }
+}

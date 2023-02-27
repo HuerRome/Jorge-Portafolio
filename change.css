@@ -1,0 +1,128 @@
+body.change *{
+    color: #11152b;
+}
+
+body.change{
+    background: #fff;
+}
+
+body.change::-webkit-scrollbar {
+    width: 12px;         
+}
+  
+body.change::-webkit-scrollbar-track {  
+    background: #8682c7;   
+}
+
+body.change::-webkit-scrollbar-thumb {
+  background-color: #8682c7;  
+  background-image: linear-gradient(to top,#d3d0fd,#b2dffd);
+  border-radius: 20px;        
+  border: 3px solid #8682c7;
+}
+
+body.change .container{
+    background: #fff;
+}
+
+
+body.change .about{
+    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #e5edf1 30%);
+    background: radial-gradient(circle at 100% 0%, #9db7ff 0%, #aaa5ff 40%, #fff 30%);
+    
+    background: #0d0d0d;
+    background: radial-gradient(circle at 100% 0%, #2e2e2e 0%, #2e2e2e 25%, #1D1D1D 60%);
+    background: radial-gradient(circle at 100% 0%, #9db7ff 4%, #aaa5ff 20%, #fff 60%);
+    background: #fff;
+}
+
+body.change .about > div > div:first-child > span{
+    color: #11152b;
+    font-family: 'La Belle Aurore','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body.change .menu > div .sunny-outline{
+    background: #9DB6FF;
+    border: 1ps solid rgba(255, 255, 255, 0.15);
+    filter: none;
+}
+
+body.change .about .targeta .circles .circle{
+    background: #4e54c8; 
+    background: -webkit-linear-gradient(to top, #6c72e9, #8f94fb); 
+    background: linear-gradient(to top, #6c72e9, #9ca0fb);
+}
+
+body.change .menu{
+    background: rgba(38, 0, 255, 0.1);
+}
+
+body.change .about .targeta .cards > div{
+    background: radial-gradient(circle at 0% 100%, #303033 20%, #38393a 40%, #3b3c41 100%);
+    background: radial-gradient(circle at 0% 100%, #303033 20%, #38393a 40%, #3b3c41 100%);
+    background: #0F2027;  
+    background: -webkit-linear-gradient(200deg, #3B4264, #262c4e, #11152b);  
+    background: linear-gradient(200deg, rgb(163, 187, 253), rgb(165, 183, 255), rgb(126, 143, 255));
+    background: #fff;
+    background: #ffffff;
+}
+
+body.change .about .targeta .cards > div .comment, body.change .about .targeta .cards > div p{
+    color: #020139;
+}
+
+body.change .work > div > div p{
+    color: rgba(214, 214, 214, 0.8);
+    color: rgba(0 , 0, 0, 0.8);
+}
+
+body.change .work > div > div a{
+    background: #9DB6FF;
+    border: 2px solid #9DB6FF;
+}
+
+body.change .work > div > div a:hover{
+    background: #9DB6FF;
+    border: 2px solid #9DB6FF;
+}
+
+body.change .work > div > div a ion-icon{
+    color: #11152b;
+}
+
+body.change .work > div > div a span{
+    color: #11152b;
+}
+
+body.change .container > .gotop{
+    background: #9DB6FF;
+}
+
+body.change .contact .cv > div a{
+    color: #11152b;
+    background: #9DB6FF;
+}
+
+body.change .contact .cv > div a ion-icon{
+    color: #11152b;
+}
+
+body.change .contact .links > div:first-child h1{
+    color: #11152b;
+}
+body.change .contact .links > div:first-child h2{
+    color: #11152b;
+}
+
+body.change .contact .links > div:last-child a ion-icon{
+    color: #fff;
+}
+
+body.change footer{
+    background: #9DB6FF;
+}
+
+body.change .menu > div{
+    background: #9DB6FF;
+    background: #b5c7ff;
+}

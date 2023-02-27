@@ -1,0 +1,263 @@
+.work{
+    width: 100%;
+    display: flex;
+    margin: 8vh 0 6vh 0;
+    flex-direction: column;
+}
+
+.work h1{
+    width: 40%;
+    font-size: 80px;
+    font-weight: 800;
+    color: #52dee5;
+    line-height: 80px;
+    margin-bottom: 2vh;
+    margin-left: 6%;
+    opacity: 0;
+    width: 100%;
+    transition: all 1s ease-out;
+    transform: translate(-20vh, 0vh);
+    background-image: linear-gradient(to right,#8e6de7,#d56de7,#5dbeff,#d56de7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fluido 10s ease-in-out infinite;
+    background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.work h1.visible{
+    opacity: 1;
+    transform: translate(0vh, 0vh);
+}
+
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+
+.work > div{
+    gap: 4vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vh 3vw;
+    justify-content: center;
+}
+
+.work > div > div{
+    width: 25vw;
+}
+
+.work > div > div > div{
+    width: 25vw;
+    height: 29vh;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.work > div > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.2s ease-out;
+}
+
+
+.work > div > div img:hover{
+    transform: scale(1.1);
+}
+
+.work > div > div > h2{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 2.5vh 0 0.2vh 5%;
+}
+
+.work > div > div p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: calc(2vh + 5px);
+    color: rgba(214, 214, 214, 0.8);
+}
+
+.work > div > div a{
+    gap: 5px;
+    width: 90%;
+    display: flex;
+    padding: 2vh 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5% 2vh 0%;
+    border-radius: 10px;
+    align-items: center;
+    transition: all 0.5s;
+    background: none;
+    margin-top: calc(2vh + 5px);
+    justify-content: center;
+    border: 2px solid #52dee5;
+}
+
+.work > div > div a ion-icon{
+    color: #52dee5;
+}
+
+.work > div > div a span{
+    color: #52dee5;
+}
+
+
+.work > div > div a:hover{
+    background: #52dee5;
+}
+
+
+.work > div > div a:hover ion-icon{
+    color: #11152b;
+}
+
+.work > div > div a:hover span{
+    color: #11152b;
+}
+
+
+
+
+.work > div > div div span{
+    color: #11152b;
+    padding: 5px 12px;
+    border-radius: 10px;
+    margin-right: 2%;
+    background: rgba(214, 214, 214, 0.8);
+}
+
+
+
+
+@media (max-width: 480px){
+    .work{
+        width: 100%;
+        margin: 2vh 0;
+        flex-direction: column;
+    }
+
+    .work h1{
+        transition: all 1.2s ease-out;
+        font-size: 43px;
+        font-weight: 800;
+        line-height: 43px;
+        margin: 6vh 0 2vh 5vw;
+        width: 80%;
+        font-style: normal;
+    }
+     
+    .work > div{
+        gap: 10vw;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2vh 3vw;
+        justify-content: center;
+    }
+
+    .work > div > div{
+        width: 25vw;
+        opacity: 0;
+        width: 100%;
+        transition: all 1.5s ease-out;
+        transform: translate(-20vh, 0vh);
+    }
+
+    .work > div > div.visible{
+        opacity: 1;
+        transform: translate(0vh, 0vh);
+    }
+    
+    .work > div > div > div{
+        width: 25vw;
+        width: 100%;
+        height: 29vh;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .work > div > div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.2s ease-out;
+    }
+    
+    .work > div > div img:hover{
+        transform: scale(1.1);
+    }
+    
+    .work > div > div > h2{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 2.5vh 0 0.2vh 5%;
+    }
+    
+    .work > div > div p{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-bottom: calc(2vh + 5px);
+        color: rgba(214, 214, 214, 0.8);
+    }
+    
+    .work > div > div a{
+        gap: 5px;
+        width: 95%;
+        display: flex;
+        padding: 2vh 0;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 20px;
+        border-radius: 10px;
+        align-items: center;
+        transition: all 0.5s;
+        margin-top: calc(2vh + 5px);
+        justify-content: center;
+        
+    }
+    
+    .work > div > div a ion-icon{
+        color: #52dee5;
+    }
+    
+    .work > div > div a span{
+        color: #52dee5;
+    }
+    
+    .work > div > div a:hover{
+        background: #52dee5;
+    }
+    
+    .work > div > div a:hover ion-icon{
+        color: #11152b;
+    }
+    
+    .work > div > div a:hover span{
+        color: #11152b;
+    }
+    
+    .work > div > div div span{
+        color: #11152b;
+        padding: 5px 12px;
+        border-radius: 10px;
+        margin-right: 2%;
+        background: rgba(214, 214, 214, 0.8);
+    }
+
+}

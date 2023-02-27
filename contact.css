@@ -1,0 +1,255 @@
+.contact{
+    width: 100%;
+    display: flex;
+    margin: 6vh 0 12vh 0;
+}
+
+.contact > div{
+    width: 50%;
+}
+
+.contact .cv{
+    padding: 4vh 4% 4vh 6%;
+}
+
+.contact .cv h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 1.2s ease-out;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 80px;
+    margin: 2vh 0;
+    opacity: 0;
+    transition: all 1s ease-out;
+    transform: translate(-20vh, 0vh);
+    color: #52dee5;
+    background-image: linear-gradient(to right,#8e6de7,#d56de7,#5dbeff,#d56de7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fluido 10s ease-in-out infinite;
+    background: linear-gradient(-45deg,#ee7752,#8e6de7, #23a6d5, #23d5ab);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fluido {
+    0% { background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0 50% }
+}
+
+.contact .cv h1.visible{
+    opacity: 1;
+    transform: translate(0vh, 0vh);
+}
+
+.contact .cv > div{
+    gap: 3vh;
+    display: flex;
+    padding: 0 1vw;
+    flex-direction: column;
+}
+
+.contact .cv > span{
+    width: 100%;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'La Belle Aurore','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contact .cv p{
+    font-size: 16px;
+}
+
+.contact .cv > div a{
+    gap: 5px;
+    display: flex;
+    color: #52dee5;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2.5vh 4vw;
+    border-radius: 10px;
+    justify-content: center; 
+    background: #323233;
+    margin-bottom: 2vh;
+    margin-bottom: 2vh;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    background: radial-gradient(circle at 0% 100%, #303033 20%, #38393a 40%, #3b3c41 100%);
+}
+
+.contact .cv > div a ion-icon{
+    color: #52dee5;
+    font-size: 20px;
+    font-weight: 400;
+}
+.contact .links{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .links > div:first-child h1{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 6vh;
+    color: rgba(214, 214, 214, 0.8);
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'La Belle Aurore','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fafafa;
+}
+.contact .links > div:first-child h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(214, 214, 214, 0.8);
+    color: rgba(255, 255, 255, 0.2);
+    font-family: 'La Belle Aurore','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fafafa;
+}
+.contact .links > div:last-child{
+    gap: 4%;
+    width: 100%;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0vh;
+}
+.contact .links > div:last-child a{
+    gap: 5px;
+    width: 48%;
+    padding: 20px 0;
+    display: flex;
+    margin-top: 4vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #fafafa;
+}
+.contact .links > div:last-child .whatsapp{
+    background: #25D366;
+}
+.contact .links > div:last-child .gmail{
+    background: #c71610;
+}
+.contact .links > div:last-child .github{
+    background: #333;
+}
+.contact .links > div:last-child .linkedin{
+    background: #0077b5;
+}
+.contact .links > div:last-child .insta{
+    background: #cc2366;
+}
+.contact .links > div:last-child .twitter{
+    background: #1DA1F2;
+}
+
+@media (max-width: 480px){
+    .contact{
+        margin: 0vh 0;
+        flex-direction: column;
+    }
+    .contact > div{
+        width: 100%;
+    }
+    .contact .cv{
+        padding: 4vh 4% 4vh 6%;
+    }
+    .contact .cv h1{
+        margin: 2vh 0;
+        font-size: 43px;
+        font-weight: 800;
+        line-height: 43px;
+        font-style: normal;
+    }
+    .contact .cv > div{
+        gap: 3vh;
+        display: flex;
+        padding: 0 1vw;
+        flex-direction: column;
+    }
+    .contact .cv > span{
+        width: 100%;
+        font-size: 18px;
+    }
+    .contact .cv p{
+        font-size: 16px;
+    }
+    .contact .cv > div a{
+        gap: 5px;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 2.5vh 4vw;
+        margin-bottom: 2vh;
+        border-radius: 10px;
+        justify-content: center; 
+    }
+    .contact .cv > div a ion-icon{
+        font-size: 20px;
+        font-weight: 400;
+    }  
+    .contact .links{
+        height: auto;
+        padding: 2vh 0 4vh 0;
+    } 
+    .contact .links > div:first-child h1{
+        margin-left: 5%;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 0;
+        color: #fafafa;
+        font-family: "Open Sans" ,Arial, Helvetica, sans-serif;
+    }
+    .contact .links > div:first-child h2{
+        margin-left: 5%;
+        font-size: 18px;
+        margin-bottom: 2vh;
+        font-weight: 500;
+        color: rgba(214, 214, 214, 0.8);
+        font-family: "Open Sans" ,Arial, Helvetica, sans-serif;
+    }
+    .contact .links > div:last-child{
+        gap: 0vh;
+        width: 100%;
+        padding: 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+    } 
+    .contact .links > div:last-child a{
+        gap: 5px;
+        width: 100%;
+        padding: 20px 0;
+        display: flex;
+        margin-top: 2vh;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        color: #fafafa;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
