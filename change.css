@@ -122,7 +122,10 @@ body.change footer{
     background: #9DB6FF;
 }
 
-body.change .menu > div{
-    background: #9DB6FF;
-    background: #b5c7ff;
+@media (max-width: 480px){
+    body.change .menu > div{
+        background: #9DB6FF;
+        background: #b5c7ff;
+    }
+
 }
